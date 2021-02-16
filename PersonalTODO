@@ -9,3 +9,33 @@ Invocar:
         ☐ serverless invoke local --function update --path mocks/update-event.json
     delete:
         ☐ serverless invoke local --function delete --path mocks/delete-event.json
+
+Deploy:
+    Command for all:
+        ✔ serverless deploy @done(21-02-16 15:57)
+    Command for only one function:
+        ☐ serverless deploy function -f list
+    Results:
+        ☐ Serverless: Stack update finished...
+        ☐ Service Information
+        ☐ service: notes-api
+        ☐ stage: prod
+        ☐ region: us-east-1
+        ☐ stack: notes-api-prod
+        ☐ resources: 32
+        api keys:
+            ☐ None
+        endpoints:
+            ☐ POST - https://vcznrq4249.execute-api.us-east-1.amazonaws.com/prod/notes
+            ☐ GET - https://vcznrq4249.execute-api.us-east-1.amazonaws.com/prod/notes/{id}
+            ☐ GET - https://vcznrq4249.execute-api.us-east-1.amazonaws.com/prod/notes
+            ☐ PUT - https://vcznrq4249.execute-api.us-east-1.amazonaws.com/prod/notes/{id}
+            ☐ DELETE - https://vcznrq4249.execute-api.us-east-1.amazonaws.com/prod/notes/{id}
+        functions:
+            ☐ create: notes-api-prod-create
+            ☐ get: notes-api-prod-get
+            ☐ list: notes-api-prod-list
+            ☐ update: notes-api-prod-update
+            ☐ delete: notes-api-prod-delete
+        layers:
+            ☐ None
